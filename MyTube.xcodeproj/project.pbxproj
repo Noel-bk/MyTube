@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		59DC9C181E476ECD004CE8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC9C171E476ECD004CE8D6 /* AppDelegate.swift */; };
-		59DC9C1A1E476ECD004CE8D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC9C191E476ECD004CE8D6 /* ViewController.swift */; };
+		59DC9C1A1E476ECD004CE8D6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC9C191E476ECD004CE8D6 /* MainVC.swift */; };
 		59DC9C1D1E476ECD004CE8D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DC9C1B1E476ECD004CE8D6 /* Main.storyboard */; };
 		59DC9C201E476ECD004CE8D6 /* MyTube.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59DC9C1E1E476ECD004CE8D6 /* MyTube.xcdatamodeld */; };
 		59DC9C221E476ECD004CE8D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59DC9C211E476ECD004CE8D6 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		59DC9C141E476ECD004CE8D6 /* MyTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59DC9C171E476ECD004CE8D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59DC9C191E476ECD004CE8D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59DC9C191E476ECD004CE8D6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		59DC9C1C1E476ECD004CE8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59DC9C1F1E476ECD004CE8D6 /* MyTube.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyTube.xcdatamodel; sourceTree = "<group>"; };
 		59DC9C211E476ECD004CE8D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				59DC9C171E476ECD004CE8D6 /* AppDelegate.swift */,
-				59DC9C191E476ECD004CE8D6 /* ViewController.swift */,
+				59DC9C191E476ECD004CE8D6 /* MainVC.swift */,
 				59DC9C1B1E476ECD004CE8D6 /* Main.storyboard */,
 				59DC9C211E476ECD004CE8D6 /* Assets.xcassets */,
 				59DC9C231E476ECD004CE8D6 /* LaunchScreen.storyboard */,
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59DC9C201E476ECD004CE8D6 /* MyTube.xcdatamodeld in Sources */,
-				59DC9C1A1E476ECD004CE8D6 /* ViewController.swift in Sources */,
+				59DC9C1A1E476ECD004CE8D6 /* MainVC.swift in Sources */,
 				59DC9C181E476ECD004CE8D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +303,7 @@
 				59DC9C2B1E476ECD004CE8D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
