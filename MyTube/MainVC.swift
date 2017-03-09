@@ -10,14 +10,17 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var myData = [MyTableViewCell]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         // TODO
-        // Logic goes here.. 
-        
+        // Logic goes here..
     }
-
+    
 }
 
