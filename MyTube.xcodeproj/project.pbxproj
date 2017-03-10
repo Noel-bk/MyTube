@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5993315A1E72D93500D0244D /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599331591E72D93500D0244D /* MyData.swift */; };
 		599C55B61E719DED00B05B0E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C55B51E719DED00B05B0E /* MyTableViewCell.swift */; };
 		59DC9C181E476ECD004CE8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC9C171E476ECD004CE8D6 /* AppDelegate.swift */; };
 		59DC9C1A1E476ECD004CE8D6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC9C191E476ECD004CE8D6 /* MainVC.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		599331591E72D93500D0244D /* MyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
 		599C55B51E719DED00B05B0E /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		59DC9C141E476ECD004CE8D6 /* MyTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59DC9C171E476ECD004CE8D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				59DC9C171E476ECD004CE8D6 /* AppDelegate.swift */,
 				599C55B51E719DED00B05B0E /* MyTableViewCell.swift */,
 				59DC9C191E476ECD004CE8D6 /* MainVC.swift */,
+				599331591E72D93500D0244D /* MyData.swift */,
 				59DC9C1B1E476ECD004CE8D6 /* Main.storyboard */,
 				59DC9C211E476ECD004CE8D6 /* Assets.xcassets */,
 				59DC9C231E476ECD004CE8D6 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				59DC9C201E476ECD004CE8D6 /* MyTube.xcdatamodeld in Sources */,
 				599C55B61E719DED00B05B0E /* MyTableViewCell.swift in Sources */,
 				59DC9C1A1E476ECD004CE8D6 /* MainVC.swift in Sources */,
+				5993315A1E72D93500D0244D /* MyData.swift in Sources */,
 				59DC9C181E476ECD004CE8D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
