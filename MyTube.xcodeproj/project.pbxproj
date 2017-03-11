@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5993315A1E72D93500D0244D /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599331591E72D93500D0244D /* MyData.swift */; };
 		599C55B61E719DED00B05B0E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C55B51E719DED00B05B0E /* MyTableViewCell.swift */; };
+		59A84C0E1E743436004FC164 /* BADABB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 59A84C0D1E743436004FC164 /* BADABB.TTF */; };
 		59DC9C181E476ECD004CE8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC9C171E476ECD004CE8D6 /* AppDelegate.swift */; };
 		59DC9C1A1E476ECD004CE8D6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC9C191E476ECD004CE8D6 /* MainVC.swift */; };
 		59DC9C1D1E476ECD004CE8D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DC9C1B1E476ECD004CE8D6 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		599331591E72D93500D0244D /* MyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
 		599C55B51E719DED00B05B0E /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		59A84C0D1E743436004FC164 /* BADABB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = BADABB.TTF; path = ../BADABB.TTF; sourceTree = "<group>"; };
 		59DC9C141E476ECD004CE8D6 /* MyTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59DC9C171E476ECD004CE8D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59DC9C191E476ECD004CE8D6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				599331591E72D93500D0244D /* MyData.swift */,
 				59DC9C1B1E476ECD004CE8D6 /* Main.storyboard */,
 				59DC9C211E476ECD004CE8D6 /* Assets.xcassets */,
+				59A84C0D1E743436004FC164 /* BADABB.TTF */,
 				59DC9C231E476ECD004CE8D6 /* LaunchScreen.storyboard */,
 				59DC9C261E476ECD004CE8D6 /* Info.plist */,
 				59DC9C1E1E476ECD004CE8D6 /* MyTube.xcdatamodeld */,
@@ -134,6 +137,7 @@
 			files = (
 				59DC9C251E476ECD004CE8D6 /* LaunchScreen.storyboard in Resources */,
 				59DC9C221E476ECD004CE8D6 /* Assets.xcassets in Resources */,
+				59A84C0E1E743436004FC164 /* BADABB.TTF in Resources */,
 				59DC9C1D1E476ECD004CE8D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
