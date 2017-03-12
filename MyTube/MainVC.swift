@@ -52,5 +52,18 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return myData.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = myData[indexPath.row]
+        performSegue(withIdentifier: "SecondVC", sender: data)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? SecondVC {
+            if let d = sender as? MyData {
+                destination.myData = d
+            }
+        }
+    }
+    
 }
 
