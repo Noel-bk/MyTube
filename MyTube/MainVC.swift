@@ -54,6 +54,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = myData[indexPath.row]
+        NSLog("You selected cell number: \(indexPath.row)!")
         performSegue(withIdentifier: "SecondVC", sender: data)
     }
     
