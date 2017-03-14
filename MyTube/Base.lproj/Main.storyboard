@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Toi-ud-D7P">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--MainVC-->
+        <!--List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="MyTube" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,16 +61,17 @@
                             <constraint firstAttribute="trailing" secondItem="326-KB-c0c" secondAttribute="trailing" id="vQq-ep-K9o"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="List" id="zez-wp-t8d"/>
                     <connections>
                         <outlet property="tableView" destination="326-KB-c0c" id="ryn-eO-ivh"/>
-                        <segue destination="Tjh-9j-lbn" kind="showDetail" identifier="SecondVC" id="yph-uL-gNl"/>
+                        <segue destination="Tjh-9j-lbn" kind="show" identifier="SecondVC" id="yph-uL-gNl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--SecondVC-->
+        <!--Details-->
         <scene sceneID="lza-7I-HUW">
             <objects>
                 <viewController id="Tjh-9j-lbn" customClass="SecondVC" customModule="MyTube" customModuleProvider="target" sceneMemberID="viewController">
@@ -92,13 +93,32 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Details" id="3EA-hO-5HF"/>
                     <connections>
                         <outlet property="secondLbl" destination="N8R-az-RAE" id="nYc-xI-hah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NC7-3b-w22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848.79999999999995" y="136.28185907046478"/>
+            <point key="canvasLocation" x="1788" y="136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0rZ-fm-srg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Toi-ud-D7P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WUC-E0-JSL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ck3-fn-RQ9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BgD-vU-V7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
