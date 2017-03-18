@@ -11,6 +11,7 @@ import UIKit
 class SecondVC: UIViewController {
 
     @IBOutlet weak var secondLbl: UILabel!
+    @IBOutlet weak var webView: UIWebView!
     
     private var _myData: MyData!
     
@@ -27,11 +28,16 @@ class SecondVC: UIViewController {
         super.viewDidLoad()
 
         secondLbl.text = myData.someTitle
+        webView.loadRequest(URLRequest(url: URL(string: self.makeUrl(queryString: myData.someTitle))!))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func makeUrl(queryString: String) -> String {
+        return "https://www.google.com/search?q=\(queryString)"
     }
     
 
