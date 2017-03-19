@@ -14,7 +14,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--List-->
+        <!--Keyword-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="MyTube" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Sc-HZ-feV" id="CMG-m8-5lD">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Content goes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkX-4E-XFq">
@@ -61,7 +61,7 @@
                             <constraint firstAttribute="trailing" secondItem="326-KB-c0c" secondAttribute="trailing" id="vQq-ep-K9o"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="List" id="zez-wp-t8d"/>
+                    <navigationItem key="navigationItem" title="Keyword" id="zez-wp-t8d"/>
                     <connections>
                         <outlet property="tableView" destination="326-KB-c0c" id="ryn-eO-ivh"/>
                         <segue destination="Tjh-9j-lbn" kind="show" identifier="SecondVC" id="yph-uL-gNl"/>
@@ -71,7 +71,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--Details-->
+        <!--Result-->
         <scene sceneID="lza-7I-HUW">
             <objects>
                 <viewController id="Tjh-9j-lbn" customClass="SecondVC" customModule="MyTube" customModuleProvider="target" sceneMemberID="viewController">
@@ -98,7 +98,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Details" id="3EA-hO-5HF"/>
+                    <navigationItem key="navigationItem" title="Result" id="3EA-hO-5HF"/>
                     <connections>
                         <outlet property="secondLbl" destination="N8R-az-RAE" id="nYc-xI-hah"/>
                         <outlet property="webView" destination="aGQ-pg-MPw" id="phP-de-WSr"/>
@@ -113,7 +113,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Toi-ud-D7P" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WUC-E0-JSL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WUC-E0-JSL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
