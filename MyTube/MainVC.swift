@@ -58,6 +58,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         performSegue(withIdentifier: "SecondVC", sender: data)
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.myData.remove(at: indexPath.row)
+            self.tableView.reloadData()
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? SecondVC {
             if let d = sender as? MyData {
