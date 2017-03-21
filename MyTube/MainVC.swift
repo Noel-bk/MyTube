@@ -18,9 +18,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                                     MyData(someTitle: "BANG"),
                                     MyData(someTitle: "BOOM"))
     
+    var initialData = [MyData]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        initialData = myData
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -67,6 +71,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // TODO
         // reset table view
         NSLog("Logic goes here..")
+        self.myData.removeAll()
+        self.myData = self.initialData
+        self.tableView.reloadData()
     }
     
 }
