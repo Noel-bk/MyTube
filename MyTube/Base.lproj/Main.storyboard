@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Sc-HZ-feV" id="CMG-m8-5lD">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Content goes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkX-4E-XFq">
@@ -61,7 +61,18 @@
                             <constraint firstAttribute="trailing" secondItem="326-KB-c0c" secondAttribute="trailing" id="vQq-ep-K9o"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Keyword" id="zez-wp-t8d"/>
+                    <navigationItem key="navigationItem" title="Keyword" id="zez-wp-t8d">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="63J-Rk-vWb">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ebP-ia-MI0">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHS-Em-f3X"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="326-KB-c0c" id="ryn-eO-ivh"/>
                         <segue destination="Tjh-9j-lbn" kind="show" identifier="SecondVC" id="yph-uL-gNl"/>
@@ -113,7 +124,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Toi-ud-D7P" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WUC-E0-JSL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WUC-E0-JSL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

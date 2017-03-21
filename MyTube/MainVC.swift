@@ -73,5 +73,11 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    @IBAction func resetBtnPressed(_ sender: Any) {
+        // TODO
+        // reset table view
+        NSLog("Logic goes here..")
+    }
+    
 }
 
