@@ -12,25 +12,15 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var myData = [MyData]()
+    var myData = [MyData](arrayLiteral: MyData(someTitle: "BAZINGA"),
+                                    MyData(someTitle: "BADA"),
+                                    MyData(someTitle: "BING"),
+                                    MyData(someTitle: "BANG"),
+                                    MyData(someTitle: "BOOM"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        // TODO
-        // Logic goes here..
-        let d1 = MyData(someTitle: "BAZINGA!")
-        let d2 = MyData(someTitle: "BADA")
-        let d3 = MyData(someTitle: "BING")
-        let d4 = MyData(someTitle: "BANG")
-        let d5 = MyData(someTitle: "BOOM")
-        
-        myData.append(d1)
-        myData.append(d2)
-        myData.append(d3)
-        myData.append(d4)
-        myData.append(d5)
         
         tableView.delegate = self
         tableView.dataSource = self
