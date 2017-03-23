@@ -68,9 +68,15 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func resetBtnPressed(_ sender: Any) {
-        // TODO
+        
+        let alert = UIAlertController(title: "Reset", message: "Message goes here", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction!) in self.resetTableView()}))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func resetTableView() {
         // reset table view
-        NSLog("Logic goes here..")
         self.myData.removeAll()
         self.myData = self.initialData
         self.tableView.reloadData()
